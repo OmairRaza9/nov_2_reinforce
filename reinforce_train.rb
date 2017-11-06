@@ -25,3 +25,33 @@ train_station.each do |two|
 end
 
 p array_two
+
+array3 = []
+train_station.each do |value|
+  if value[:train] == "610"
+    array3 << value[:direction]
+  end
+end
+p array3
+
+array4 = []
+train_station.each do |value|
+  if value[:direction] == "north"
+    array4 << value[:train]
+  end
+end
+p array4
+
+array5 = []
+train_station.each do |value|
+  if value[:direction] == "east"
+    array5 << value[:train]
+  end
+end
+p array5
+
+train_station.each do |value|
+value[:first_departure_time] => 6
+end
+
+p train_station
